@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="loginTop">
+        <div class="div11">
+            <img src="./images/tx.jpg" alt="">
+            <p>
+                <span>zhangsan</span>
+                <span>设置个人信息</span>
+            </p>
+        </div>
+    </div>
+    <div class="login_list">
+        <div class="p1">
+            <p>
+                <img src="./images/login1.jpg" alt="">
+                <span>我的提问</span>
+            </p>
+            <p>
+                <img src="./images/login4.jpg" alt="">
+            </p>
+        </div>
+        <div class="p1">
+            <p>
+                <img src="./images/login2.jpg" alt="">
+                <span>我的解答</span>
+            </p>
+            <p>
+                <img src="./images/login4.jpg" alt="">
+            </p>
+        </div>
+    </div>
+    <div class="login_list">
+        <div class="p1">
+            <p>
+                <img src="./images/login3.jpg" alt="">
+                <span>认证为专家</span>
+            </p>
+            <p>
+                <span>已认证</span>
+                <img src="./images/login4.jpg" alt="">
+            </p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div>
+            <i class="icon iconfont icon-shouye"></i>
+            <div class="name">首页</div>
+        </div>
+        <div>
+            <i class="icon iconfont icon-xiaoxitongzhi"></i>
+            <div class="name">消息</div>
+        </div>
+
+        <div class="hign">
+            <i class="icon iconfont icon-wode"></i>
+            <div class="name">我的</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script>
+
+</script>

@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+<div class="wrap">
+
+    <div class="user_infor detail_user">
+        <div class="div1">
+            <div class="div11">
+                <img src="./images/tx.jpg" alt="">
+                <p>
+                    <span>用户昵称</span>
+                    <span>11小时前</span>
+                </p>
+            </div>
+            <div>1827次阅读</div>
+        </div>
+        <div class="text1">
+            东西是本朝还是民国呢？请讲讲怎么区别，学习贴，求指教，谢谢！
+        </div>
+        <div class="imgs">
+            <p><img src="./images/p1.jpg" alt=""></p>
+            <p><img src="./images/p1.jpg" alt=""></p>
+            <p><img src="./images/p1.jpg" alt=""></p>
+            <p><img src="./images/p1.jpg" alt=""></p>
+            <p><img src="./images/p1.jpg" alt=""></p>
+            <p><img src="./images/p1.jpg" alt=""></p>
+            <p><img src="./images/p1.jpg" alt=""></p>
+            <p><img src="./images/p1.jpg" alt=""></p>
+        </div>
+        <p class="shengyu">未解答，剩余1天23小时</p>
+    </div>
+
+    <div class="zhuanjia detail_zhuanjia">
+        <h3>专家解答</h3>
+        <div class="z1">
+            <div class="p p1">
+                <img src="./images/tx1.jpg" alt="">
+            </div>
+            <div class="p p2">
+                <p><span>孙鹏</span><img src="images/zj.jpg"></p>
+                <b>5分钟前</b>
+                <p class="dayu">中国艺术研究院艺术品鉴定室研究员</p>
+            </div>
+            <a href="###">举报</a>
+        </div>
+        <div class="z1">
+            <div class="p p1">
+                <img src="./images/tx1.jpg" alt="">
+            </div>
+            <div class="p p2">
+                <p><span>孙鹏</span><img src="images/zj.jpg"></p>
+                <b>5分钟前</b>
+                <p class="dayu">中国艺术研究院艺术品鉴定室研究员</p>
+            </div>
+            <a href="###">举报</a>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="fabu">
+            <input type="text" placeholder="写解答评分酬金">
+            <a href="###"><img src="./images/pf.jpg" alt=""></a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script>
+
+</script>

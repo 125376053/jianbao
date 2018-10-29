@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="tab">
+        <p class="cur">
+            <span>已提交</span>
+        </p>
+        <p>
+            <span>已解答</span>
+            <i>8</i>
+        </p>
+    </div>
+    <div class="content" style="display: block;">
+        <div class="tongguo">
+            <p class="title">
+                <span>审核已通过</span>
+                <span>27分钟前</span>
+            </p>
+            <p class="infor">恭喜，你发布的内容《东西是本朝...》审核已通过</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="tongguo">
+            <p class="title">
+                <span>专家已解答</span>
+                <span>27分钟前</span>
+            </p>
+            <p class="infor">恭喜，你发布的内容《东西是本朝...》审核已通过</p>
+            <a href="###">去查看</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <i class="icon iconfont icon-shouye"></i>
+            <div class="name">首页</div>
+        </div>
+        <div class="hign">
+            <i class="icon iconfont icon-xiaoxitongzhi"></i>
+            <div class="name">消息</div>
+        </div>
+
+        <div>
+            <i class="icon iconfont icon-wode"></i>
+            <div class="name">我的</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script>
+    $(".tab p").click(function(){
+        var index=$(this).index()
+        $(this).addClass('cur').siblings().removeClass('cur')
+        $(".content").eq(index).show().siblings('.content').hide()
+    })
+</script>
