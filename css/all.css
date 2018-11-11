@@ -115,6 +115,11 @@ position: fixed; bottom: 0;padding: 0 1rem; left:0;right:0;}
 .fabu input{ width: 5.48rem; height: .64rem; border-radius:.32rem; border: 1px solid #e5e5e5; box-sizing: border-box; float: left; padding: 0 .2rem; font-size: .2rem;}
 .fabu a img{ width: .68rem;height: .52rem; margin-top: .1rem; float: right;}
 
+.footer3{ height: 1.36rem; display: flex; justify-content: space-between; align-items: center;position: fixed; bottom: 0;padding: 0 .16rem; left:0;right:0; background: #fff;}
+.footer3 a{ display: block; width: 50%; text-align: center; height: .99rem; line-height: .99rem;margin-top: .2rem;}
+.footer3 a img{ width: .6rem; height: .6rem; vertical-align: middle;}
+.footer3 .a2{color:#fff; background: #907355;  font-size: .32rem;}
+
 /*提问*/
 .tiwen{ padding: 0;}
 .tiwen li{ margin-bottom: .2rem; background: #fff; padding:.24rem; }
@@ -122,7 +127,23 @@ position: fixed; bottom: 0;padding: 0 1rem; left:0;right:0;}
 .hasDa img{ width: .42rem;height: .42rem; vertical-align: middle;}
 
 
+/*快问专家*/
+.kw{background: #fff; margin: .2rem 0 0;}
+.kw ul{ overflow: hidden; padding:.2rem; padding-left: .3rem;}
+.kw ul li{ width: 1.58rem;height: 1.58rem; position: relative; float: left; margin-right:.2rem; margin-bottom: .2rem;}
+.kw ul li .uploadImg{ width: 1.58rem;height: 1.58rem; object-fit: cover;}
+.kw ul li .closed{ width: 0.42rem;height: 0.37rem; position: absolute; right: -0.1rem;top:-0.1rem; background: url("../images/closed.jpg") no-repeat; background-size: contain;}
+.btnload{width: 1.58rem;height: 1.58rem; margin-right: 0!important; background: url("../images/load.jpg") no-repeat; background-size: contain;}
+.btnload input{width: 1.58rem;height: 1.58rem; opacity: 0;}
+.miaoshu{ position: relative; height: 3.25rem; padding:.3rem; background: #fff;}
+.miaoshu textarea{ width: 100%; height: 2.9rem;}
+.shuzi{ position: absolute; bottom: .2rem; right: .2rem;}
+.flList{ clear: both;padding:.28rem; background: #fff; overflow: hidden; border-bottom: 1px solid #ccc;}
+.flList a{ padding:0 .2rem; height: .5rem; line-height: .55rem; float: left; border: 1px solid #ccc; font-size: .2rem; color:#333; margin: 0 .2rem .2rem 0;}
+.tijiaowenti{ height: .87rem; line-height: .87rem; margin: .7rem .3rem; background: #dfdfe7; color:#fff; text-align: center;}
 
+/*专家*/
+.zhuanjia2{ padding: 0;}
 
 
 

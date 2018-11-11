@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body style="overflow: auto;">
+<div class="kw">
+    <ul>
+        <li>
+            <img class="uploadImg" src="./images/p1.jpg" alt="">
+            <a href="###" class="closed"></a>
+        </li>
+        <li>
+            <img class="uploadImg" src="./images/p1.jpg" alt="">
+            <a href="###" class="closed"></a>
+        </li>
+        <li>
+            <img class="uploadImg" src="./images/p1.jpg" alt="">
+            <a href="###" class="closed"></a>
+        </li>
+        <li class="btnload">
+            <input name="Filedata" type="file" accept="image/*">
+        </li>
+    </ul>
+</div>
+`
+<div class="miaoshu">
+    <textarea maxlength="500" placeholder="请描述你的问题"></textarea>
+    <span class="shuzi">您还可以输入500个字</span>
+</div>
+
+<div class="index_content fenlei">
+    <div class="top">
+        <h1>藏品分类</h1>
+    </div>
+    <div class="flList">
+        <a href="###">陶瓷</a>
+        <a href="###">陶瓷</a>
+        <a href="###">陶瓷</a>
+        <a href="###">陶瓷</a>
+        <a href="###">陶瓷</a>
+        <a href="###">陶瓷</a>
+        <a href="###">陶瓷</a>
+        <a href="###">陶瓷</a>
+    </div>
+    <div class="login_list" style="margin-top: 0;">
+        <div class="p1">
+            <p>
+                <span>选择专家</span>
+            </p>
+            <p>
+                <img src="./images/login4.jpg" alt="">
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="tijiaowenti">提交问题</div>
+
+</body>
+</html>
