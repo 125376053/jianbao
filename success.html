@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付成功</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont2/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+
+<!--固定头部-->
+<div class="flTop">支付成功</div>
+<div class="success">
+    <!--<i class="icon iconfont icon-chahao"></i>
+    <i class="icon iconfont icon-icon_duihao-mian"></i>-->
+    <p>
+        <i class="icon iconfont icon-icon_duihao-mian"></i>
+        <span>支付成功</span>
+    </p>
+    <p>
+        <span>订单号</span>
+        <span>11111111111111111111</span>
+    </p>
+    <div class="dl">
+        <a href="order.html" style="color:#fff;">返回</a>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script>
+
+</script>

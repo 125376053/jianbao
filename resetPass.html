@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>忘记密码</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+
+<!--固定头部-->
+<div class="flTop">找回密码
+    <a href="login.html" class="leftA"></a>
+</div>
+
+<div class="login">
+
+    <div class="login1">
+        <div class="pass">
+            <input type="text" placeholder="手机号" />
+            <div class="closedBtn">
+                <div class="mbc1"><span>×</span></div>
+            </div>
+        </div>
+        <div class="pass">
+            <div class="valid">
+                <input type="text" placeholder="验证码" />
+            </div>
+            <div class="telvd">
+                <span class="yz yanzheng ">重新发送(60s)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="dl">确定</div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script>
+    $("#useMaLogin").click(function(){
+        $(".login1").hide()
+        $(".login2").show()
+    })
+</script>

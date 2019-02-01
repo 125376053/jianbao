@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实名认证</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+
+<!--固定头部-->
+<div class="flTop">实名认证</div>
+<div class="authDiv">
+    <p>
+        <span>姓名:</span>
+        <span>老王</span>
+    </p>
+    <p>
+        <span>身份证号:</span>
+        <span>1234</span>
+    </p>
+    <div class="authFile">
+        <p>身份证正面:</p>
+        <input type="file">
+        <div class="fileDiv">请上传身份证照片</div>
+    </div>
+    <div class="authFile">
+        <p>身份证反面:</p>
+        <input type="file">
+        <div class="fileDiv">请上传身份证照片</div>
+    </div>
+    <div class="dl">提交</div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script>
+
+</script>
