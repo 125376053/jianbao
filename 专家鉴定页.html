@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        .jiandingContent{margin-top: .2rem;background: #fff;padding: .2rem;}
+        .yongjin{margin-top: .2rem;background: #fff;padding: .2rem; display: flex; align-content: center; justify-content: center;}
+        .yongjin p{ width: 2rem; text-align: center; }
+        .jiandingfooter{margin-top: 1rem;display: flex; align-content: center; justify-content: center;}
+        .jiandingfooter>a{ width: 2.5rem; text-align: center; height: .8rem;line-height: .8rem; color:#fff; border-radius: .4rem; background: #8d7253; margin: 0 .2rem;}
+    </style>
+</head>
+<body style="overflow: auto;">
+<div class="kw">
+    <ul>
+        <li>
+            <img class="uploadImg" src="./images/p1.jpg" alt="">
+        </li>
+        <li>
+            <img class="uploadImg" src="./images/p1.jpg" alt="">
+        </li>
+    </ul>
+</div>
+<!--客户要求鉴定的内容-->
+<div class="jiandingContent">
+    <p>客户要求鉴定的内容客户要求鉴定的内容客户要求鉴定的内容客户要求鉴定的内容客户要求鉴定的内容客户要求鉴定的内容客户要求鉴定的内容</p>
+</div>
+
+<!--佣金-->
+<div class="yongjin">
+    <p>专家所得20元</p>
+    <p>佣金10元</p>
+</div>
+
+`<!--鉴定评语-->
+<div class="miaoshu">
+    <textarea maxlength="500" placeholder="请书写鉴定评语"></textarea>
+    <span class="shuzi">您还可以输入500个字</span>
+</div>
+
+<div class="jiandingfooter">
+    <a href="###" class="tijiao">提交</a>
+    <a href="###" class="tuihui">退回</a>
+</div>
+
+</body>
+</html>
