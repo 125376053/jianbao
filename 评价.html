@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专家评价</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function (win, doc) {
+            function change() {
+                if (doc.documentElement.clientWidth >= 750) {
+                    doc.documentElement.style.fontSize = 750 / 750 * 100 + 'px';
+                } else {
+                    doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 100 + 'px';
+                }
+            }
+
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document)
+    </script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        .pingfen{
+            background: #fff;
+            margin-top: .2rem;
+            padding-top: .2rem;
+            margin-bottom: .2rem;
+        }
+        .pingfen .one{
+            height: .8rem;
+            line-height: .8rem;
+            padding: 0 .2rem;
+        }
+        .pingfen .one{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .pingfen .one p{
+            font-size: .32rem;
+            margin-right: .2rem;
+            color:#e02d26;
+        }
+        .pingfen .one ul{
+            width: 130px;
+        }
+        .pingfen .one li{
+            width: 26px;
+            height: 26px;
+            background:url(star.gif);
+            float: left;
+        }
+        .pingfen .one li.on{
+            background-position: 0 -29px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="index_content">
+        <div class="user_infor">
+            <div class="div1">
+                <div class="div11">
+                    <img src="./images/tx.jpg" alt="">
+                    <p>专家评论缩略</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--评分-->
+    <div class="pingfen">
+        <div class="one">
+            <p>鉴定满意度</p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="one">
+            <p>回复速度</p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="one">
+            <p>收费满意度</p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--评价-->
+    <div class="miaoshu">
+        <textarea maxlength="500" placeholder="你的详细评价"></textarea>
+        <span class="shuzi">您还可以输入500个字</span>
+    </div>
+
+    <!--上传评价图片-->
+    <div class="kw">
+        <ul>
+            <li>
+                <img class="uploadImg" src="./images/p1.jpg" alt="">
+                <a href="###" class="closed"></a>
+            </li>
+            <li>
+                <img class="uploadImg" src="./images/p1.jpg" alt="">
+                <a href="###" class="closed"></a>
+            </li>
+            <li>
+                <img class="uploadImg" src="./images/p1.jpg" alt="">
+                <a href="###" class="closed"></a>
+            </li>
+            <li class="btnload">
+                <input name="Filedata" type="file" accept="image/*">
+            </li>
+        </ul>
+    </div>
+
+    <!--提交评价-->
+    <div class="dl" style="margin:.5rem .2rem;">提交</div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script>
+    $('.pingfen .one').each(function(item,index){
+        var li = $(this).find('li')
+        start(li)
+    })
+    function start(ele){
+        var aLi = ele;
+        for(var i = 0; i < aLi.length; i++){
+            aLi[i].index = i;
+            aLi[i].addEventListener('touchstart',function(){
+                for(var j = 0; j < aLi.length; j++){
+                    console.log(j, this.index)
+                    if(j <= this.index){
+                        aLi[j].className = 'on';
+                    }else{
+                        aLi[j].className = '';
+                    }
+                }
+            },false)
+            aLi[i].onclick = function(){
+                alert(this.index+1)
+            }
+        }
+    }
+</script>

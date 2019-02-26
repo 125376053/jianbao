@@ -154,7 +154,10 @@ position: fixed; bottom: 0;padding: 0 1rem; left:0;right:0;}
 .shuzi{ position: absolute; bottom: .2rem; right: .2rem;}
 .flList{ clear: both;padding:.28rem; background: #fff; overflow: hidden; border-bottom: 1px solid #ccc;}
 .flList a{ padding:0 .2rem; height: .5rem; line-height: .55rem; float: left; border: 1px solid #ccc; font-size: .2rem; color:#333; margin: 0 .2rem .2rem 0;}
-.tijiaowenti{ height: .87rem; line-height: .87rem; margin: .7rem .3rem; background: #dfdfe7; color:#fff; text-align: center;}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx*/
+.tijiaowenti{ height: .87rem; line-height: .87rem; margin: .7rem .3rem; background: #8d7253; color:#fff; text-align: center;}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 /*专家*/
 .zhuanjia2{ padding: 0;}
@@ -182,7 +185,9 @@ position: fixed; bottom: 0;padding: 0 1rem; left:0;right:0;}
 
 .telvd{float:right;width:48%;text-align:center;background:#eee;color:#aaa;height:0.96rem;line-height:0.96rem;}
 
-.dl{line-height:0.87rem;background:#ea5413;color:#fff;text-align:center;margin-top:0.3rem;background:#a0a0a0;border-radius:10px;}
+/*xxxxxxxxxxxxxxxxxx修改背景色*/
+.dl{line-height:0.87rem;background:#8d7253;color:#fff;text-align:center;margin-top:0.3rem;border-radius:10px;}
+/*修改背景色*/
 .curDl{background:#dd6a37;}
 
 .findMa{line-height:0.77rem;text-align:center;font-size:0.24rem;float:right;margin-right:0.45rem;}
